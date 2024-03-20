@@ -1,3 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background: #5CB9FF;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 300px;
+    height: 200px;
+}
+
+.container {
+    width: 1350px;
+    margin: 0 auto;
+    background: rgba(255, 165, 0, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    border-radius: 10px;
+    background: rgba(159, 103, 103, 0.453);
+}
+
+.top-info {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.top-info p {
+    margin: 5px 20px ;
+}
+
+/* pokemon types color */
+.electric {
+    background: yellow;
 }
