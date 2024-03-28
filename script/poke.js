@@ -1,6 +1,6 @@
-async function fetchPokemons(){
+async function fetchPokemons(url = 'https://pokeapi.co/api/v2/pokemon/'){
 
-    const response = await fetch('https://pokeapi.co/api/v2/pokemon/')
+    const response = await fetch(url)
 
     if(!response.ok) {
         throw new Error("Could not fetch the data")
