@@ -25,12 +25,14 @@ body{
     background: rgba(255, 165, 0, 1);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
     width: 240px;
     border-radius: 10px;
     background: rgba(159, 103, 103, 0.453);
