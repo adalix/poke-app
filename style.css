@@ -1,20 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Poppins', sans-serif ;
+
+body {
+    font-family: 'Poppins', sans-serif;
     background: #5CB9FF;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.logo img{
+.logo img {
     width: 300px;
     height: 200px;
 }
@@ -22,34 +23,80 @@ body{
 .container {
     width: 1350px;
     margin: 0 auto;
-    background: rgba(255, 165, 0, 1);
     display: flex;
+    align-items: center;
+    gap: 15px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    width: 240px;
+    width: 220px;
     border-radius: 10px;
-    background: rgba(159, 103, 103, 0.453);
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.02),
+        0px 5px 4px rgba(3, 7, 18, 0.03),
+        0px 12px 9px rgba(3, 7, 18, 0.05),
+        0px 20px 15px rgba(3, 7, 18, 0.06),
+        0px 32px 24px rgba(3, 7, 18, 0.08);
 }
 
 .top-info {
     width: 100%;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-between;
 }
 
 .top-info p {
-    margin: 5px 20px ;
+    margin: 5px 20px;
+}
+
+.top-info .name {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.top-info .type {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.bottom-info {
+    margin-top: 20px;
+}
+
+.pokemonImg {
+    border-radius: 5px;
+    background: #fff;
+    width: 180px;
+    height: 180px;
 }
 
 /* pokemon types color */
 .electric {
-    background: yellow;
+    background: rgba(255, 255, 0, 0.7);
+}
+
+.grass {
+    background: rgba(56, 171, 56, 0.7);
+}
+
+.bug {
+    background: rgba(165, 42, 42, 0.8);
+}
+
+.fire {
+    background: rgba(255, 0, 0, 0.7);
+}
+
+.water {
+    background: rgba(0, 200, 255, 0.7);
 }
