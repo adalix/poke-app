@@ -1,5 +1,6 @@
-async function fetchPokemons(url = 'https://pokeapi.co/api/v2/pokemon/'){
+const POKEMON_LIST_LIMIT = 20;
 
+async function fetchPokeApi(url){
     const response = await fetch(url)
 
     if(!response.ok) {
@@ -8,3 +9,15 @@ async function fetchPokemons(url = 'https://pokeapi.co/api/v2/pokemon/'){
     const data =  await response.json();
     return data;
 }
+
+async function listPokeMons(offset=0, limit=POKEMON_LIST_LIMIT){
+    let url = undefined;
+    if (offset > 0) {
+        url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
+    } else {
+        url = `https://pokeapi.co/api/v2/pokemon?limit=${limit}`
+    }
+    return await fetchPokeApi(url)
+}
+
+
