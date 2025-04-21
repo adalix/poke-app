@@ -46,7 +46,6 @@ function renderPokemons() {
 function render(apiData) {
   clearAll();
   pokemons = apiData.results;
-  const total = apiData.count;
   renderPokemons();
 
 
